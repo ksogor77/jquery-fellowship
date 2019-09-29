@@ -47,11 +47,26 @@ const makeMiddleEarth = () => {
   console.log("Trying to make middle earth.");
 
   // 1. create a section tag with an id of middle-earth
+  $('body').addClass('div id=sections'); 
+  $('body div').addClass(`<section id="middle-earth"></section>`);
+  console.log(`$('middle-earth')`);
 
   // 2. append the section to the body of the DOM.
-
+  $("body div").append(`<section id="middle-earth"></section>`);
+  console.log(`$('middle-earth')`);
   // 3. use a for loop to iterate over the lands array that does the following:
+const createLands = ({lands}) => {
+  createMiddleEarth.forEach((lands) => {
+  const template = `
+  <article id=${lands[i]} class="land">
+    <h1>${lands[i]}</h1>
+  </article>
+  `
+  $('#middle-earth').append(`${lands[i]}`);
+})
+};
 
+console.log(`${lands}`);
   //   3a. creates an article tag (there should be one for each land when the loop is done)
 
   //   3b. gives each land article an `id` tag of the corresponding land name
