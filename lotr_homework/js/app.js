@@ -201,6 +201,12 @@ const beautifulStranger = () => {
 const forgeTheFellowShip = () => {
 
   // 1. create a new div with an id 'the-fellowship'
+$('#middle_earth').append($('<div id="the-fellowship"><h1>"The Fellowship"</h1></div>'));
+// theFellowShip.append('<h1> + "The Fellowship" + </h1>');
+// $('#middle_earth').append($('<article>theFellowShip</article>'));
+$('#the-fellowship').append($('.buddy'));
+$('#the-fellowship').append($('.hobbit'));  
+console.log(theFellowShip);
 
   // 2. add an h1 with the text 'The Fellowship' to this new div
 
