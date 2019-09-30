@@ -204,7 +204,7 @@ const forgeTheFellowShip = () => {
 $('#middle_earth').append($('<div id="the-fellowship"><h1>"The Fellowship"</h1></div>'));
 $('#the-fellowship').append($('.buddy'));
 $('#the-fellowship').append($('.hobbit'));  
-console.log(theFellowShip);
+
 
   // 2. add an h1 with the text 'The Fellowship' to this new div
 
@@ -237,13 +237,15 @@ const theBalrog = () => {
 // Chapter 10
 // ============
 const hornOfGondor = () => {
-
-  // 1. create a pop-up alert that the horn of gondor has been blown
-
+  // 1. create a pop-up alert that the horn of gondor has been blown  
+  alert("The horn of gondor has been blown!");
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
+  const boromir =  $('.buddy')[4]
+  boromir.style.textDecoration = "line-through";
 
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-
+  const baddies = $('.baddy')
+  baddies[2].remove()
 };
 
 // COMMIT YOUR WORK
