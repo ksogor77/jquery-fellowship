@@ -202,8 +202,6 @@ const forgeTheFellowShip = () => {
 
   // 1. create a new div with an id 'the-fellowship'
 $('#middle_earth').append($('<div id="the-fellowship"><h1>"The Fellowship"</h1></div>'));
-// theFellowShip.append('<h1> + "The Fellowship" + </h1>');
-// $('#middle_earth').append($('<article>theFellowShip</article>'));
 $('#the-fellowship').append($('.buddy'));
 $('#the-fellowship').append($('.hobbit'));  
 console.log(theFellowShip);
@@ -225,9 +223,9 @@ console.log(theFellowShip);
 const theBalrog = () => {
 
   // 1. change the 'Gandalf' textNode to 'Gandalf the White'
-
+  $('.buddy').eq(0).text('Gandalf the White');
   // 2. add a class "the-white" to this element
-
+  $('.buddy').eq(0).addClass("the-white");
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
 
 };
