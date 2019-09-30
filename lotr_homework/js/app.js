@@ -123,7 +123,14 @@ $('#The-Shire .hobbit:first-child').append(ring);
 const makeBaddies = () => {
 
   // 1. display an unordered list of baddies in Mordor
-
+  list = $("<ul></ul>")
+  baddies.forEach(function(baddiesName){
+    console.log("I made ->" + baddiesName);
+    baddy = $("<li>" + baddiesName + "</li>")
+    baddy.attr("class","baddy")
+    list.append(baddy)
+  });
+  $('#Mordor').append(list);
   // 2. give each of the baddies a class of "baddy"
 
   // 3. remember to append them to Mordor
